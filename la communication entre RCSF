@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="plan de travalle (la communication entre RCSF)" company="" webLink="http://" view-date="2021-02-06" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="3.0.2914" locale="fr_FR">
+    <description>
+        <![CDATA[This chart is for a material (Initiation to Research )
+Where we will define the important points, and the main addresses that help us in the research, and divide the time necessary and sufficient to address each point of the research]]>
+    </description>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="167" order="0"/>
+        <field id="tpd4" name="Date de début" width="65" order="1"/>
+        <field id="tpd5" name="Date de fin" width="64" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#ccffff #f4f4f4 #ffccff #ffff00 #66ff66 #ff3333 #ff0066 #3333ff #6666ff #cc0033]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="0" tue="0" wed="0" thu="0" fri="0" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="A meeting to determine the research plan and division of tasks" color="#cc0033" meeting="false" start="2021-02-09" duration="1" complete="0" thirdDate="2021-02-05" thirdDate-constraint="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="The search for sources and references" color="#3333ff" meeting="false" start="2021-02-10" duration="1" complete="0" thirdDate="2021-02-10" thirdDate-constraint="0" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="Sequence of thousands" color="#6666ff" meeting="false" start="2021-02-10" duration="1" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Extracting the basic concepts and necessary information with the coordination and sequence of thousands]]>
+            </notes>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" name="ABSTRACT" color="#ff3333" meeting="false" start="2021-02-11" duration="1" complete="0" thirdDate="2021-01-28" thirdDate-constraint="0" expand="true"/>
+        <task id="14" name="INTRODUCTION" color="#ff3333" meeting="false" start="2021-02-11" duration="1" complete="0" thirdDate="2021-02-09" thirdDate-constraint="0" expand="true">
+            <depend id="22" type="2" difference="0" hardness="Strong"/>
+            <depend id="34" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="22" name="RELATED WORKS" color="#66ff66" meeting="false" start="2021-02-12" duration="2" complete="0" thirdDate="2021-02-09" thirdDate-constraint="0" expand="true"/>
+        <task id="34" name="METHODOLOGY/RESEARCH METHODS" color="#ffff00" meeting="false" start="2021-02-12" duration="2" complete="0" thirdDate="2021-02-12" thirdDate-constraint="0" expand="true">
+            <depend id="43" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="43" name="Work Monitor" color="#ffccff" meeting="false" start="2021-02-14" duration="1" complete="0" thirdDate="2021-02-06" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[We review the completed work with the possibility of modification in the information obtained or the main points (correct, delete, add)]]>
+            </notes>
+            <depend id="46" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="46" name="Search delivery" color="#ccffff" meeting="false" start="2021-02-15" duration="1" complete="0" thirdDate="2021-02-06" thirdDate-constraint="0" expand="true">
+            <notes>
+                <![CDATA[Writing the project in TEX and PDF format and uploading it to github]]>
+            </notes>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
