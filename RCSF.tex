@@ -1,0 +1,443 @@
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+\usepackage{ graphicx }
+%\usepackage[english]{babel}															
+\usepackage[english]{babel}
+\usepackage{indentfirst}		% for indent
+\usepackage[utf8]{inputenc}
+
+
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}	
+\usepackage{url, array}
+\usepackage[num,abnt-repeated-author-omit=yes]{abntex2cite}
+
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty 
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+%\date{\today}
+
+%%% Begin document
+\begin{document}
+		
+{\flushleft\horrule{2pt}
+\begin{center}
+{\includegraphics[height=0.09\textwidth]{logo_english.png}} 
+\begin{tabular}{ m{1.8cm} m{10cm} m{1.8cm}}
+\begin{center}
+\end{center}
+&
+\begin{center} 
+{\small
+{Adrar University} \\
+{Faculty of Science and Technology} \\
+{Department of Mathematics and Computer Science}} \\
+
+\end{center}
+&
+
+\begin{center}
+\end{center}
+\end{tabular}
+\end{center}
+\flushleft \horrule{2pt}\\[1cm]
+}
+
+
+\begin{center}
+
+{
+\huge  
+Initiation to Research (Course) \\
+\vspace{0.2cm}
+2\textsuperscript{nd} Year Master (S3) \\
+\vspace{0.2cm}
+2020/2021}\\
+
+\vspace{1cm}
+
+{
+\Huge   
+\textbf{la communication entre réseau de capteur sans fil  }}\\
+\vspace{1cm}
+
+%Domain: Mathematics and Computer Science \\
+%Major: Informatics - Intelligent Systems \\
+{
+\Large
+\textbf{lemdak noureddine \footnote{lemdaknoureddine01@gmail.com} \\Idrissi mohammed \footnote{Idrissi.mohammed1999@gmail.com} \\ missirene abdelkarim \footnote{missirenekarim@gmail.com}}}\\
+\vspace{3cm}
+
+{
+\large
+\textbf{Instructor: Dr. Abdelghani DAHOU \footnote{Email: dahou.abdghani@univ-adrar.edu.dz}}}\\
+\today
+\end{center}
+\pagebreak
+\tableofcontents
+\pagebreak
+\listoffigures
+\textbf{Figure 2.1 :} Capteur sans fils .\\
+\textbf{Figure 2.2 :} Architecture d'un capteur sans fil .\\
+\textbf{Figure 2.3 :} Exemple d’un réseau de capteur.\\
+\pagebreak
+
+
+
+
+
+...
+
+
+
+\section{Réisme }
+
+Dans les communications sans fil, les réseaux de capteurs sans fil représentent une
+solution difficile et distante, et cela représente un défi dans la conception de tels
+réseaux, en particulier en ce qui concerne la composante énergétique, car la batterie
+doit durer toute la vie du capteur, du RCSF et la qualité et la fiabilité des données
+capturées à partir du champ du capteur et assurer qu'elles arrivent au terminal de données. \par
+Nous mettrons en œuvre le protocole TEEN pour trouver des solutions pour
+surmonter ces limitations.
+\end{itemize}
+
+\section{Introduction}
+En communication sans fil, le développement de la technologie dans le domaine de
+l'information peut conduire à la production de capteurs intelligents appelés (nœuds),
+où ils sont placés dans une vaste zone appelée le champ des capteurs, qui sont reliés
+entre eux pour former un capteur sans fil réseau, qui nous aide à surveiller les
+phénomènes naturels dans des endroits éloignés ou même à prédire avant les
+catastrophes, tels que les phénomènes géologiques des tremblements de terre,
+l'activité volcanique, ou la surveillance des variables astronomiques, ainsi que la
+médecine et le domaine militaire, en général, des solutions aux difficiles, zones
+dangereuses et isolées. \par
+Le nœud de capteur se compose de quatre unités: l'unité réceptrice (radio), l'unité
+émettrice, l'unité de traitement et l'unité d'alimentation, chacune ayant son rôle de
+base et son importance dans la construction d'un réseau solide, les données sont
+envoyées au reste de les nœuds ou à la station de base pour organiser et traiter les
+informations, cela peut être une station Une autre base fixe ou mobile, capable de
+connecter le réseau de capteurs avec une infrastructure avancée ou Internet, où
+l'utilisateur peut consulter.\par
+Le réseau de capteurs sans fil vise souvent à établir des protocoles permettant
+d'étendre les nœuds dans des environnements difficiles et difficiles à atteindre sans
+aucune intervention humaine. C'est le problème auquel ces nœuds sont confrontés.
+En utilisant la science et la technologie modernes, ils ont développé un ensemble de
+protocoles spécialement conçus pour les réseaux de capteurs sans fil, qui aident à
+prolonger au maximum la durée de vie des nœuds tout en garantissant la qualité des
+données.\par
+Le but de ce projet est de mettre en œuvre le protocole de routage hiérarchique basé
+sur des blocs TEEN pour voir l'efficacité de l'augmentation de la durée de vie du
+réseau de capteurs sans fil.
+
+\section{Travaux connexes}
+\section{Capteur }
+\subsection{Dfinition}
+Un capteur sans fil est un petit dispositif électronique capable de mesurer une valeur
+physique environnementale et de la communiquer à un centre de contrôle via une station de
+base [1]. \par
+
+    \begin{center}
+    \includegraphics[width=6cm]{cqpteur.jpg} \par
+    \caption{  \textbf{Figure 2.1 :} Capteur sans fils } \par
+   \end{center}
+Les capteurs sont dotés d’une batterie, capables de communiquer entre eux et de surveiller
+une grande variété de phénomènes ambiants, notamment : la température, l’humidité, la
+pression, le taux de bruits, la présence ou pas des certains types d’objets, et d’autres
+caractéristiques, tel que la vitesse, la direction et le volume d’un objet donné et de les
+transformer en données numériques, afin de les communiquer par ondes radio à travers le
+réseau vers la station de base (SB).\par
+\section{Architecteur de nœud capteur }
+\subsection{ Architecture matérielle}
+\begin{center}
+    \includegraphics[width=6cm]{ar.png} \par
+    \caption{  \textbf{Figure 2.2 :} Architecture d'un capteur sans fil } \par
+    \end{center}
+Cette architecture est basée sur quatre unités:\par
+\textbf{Unité de traitement:}Il s'agit de l'unité principale du capteur. Il contient un
+processeur couplé à une mémoire vive. Son rôle est de contrôler le bon
+fonctionnement des autres unités. Dans certains capteurs, ils peuvent avoir un
+système d'exploitation embarqué pour faire fonctionner le capteur, et pour
+enregistrer les informations envoyées par l'unité d'acquisition de données, celle-ci
+est couplée au volume.\par
+\textbf{ Unité d'acquisition (unité de capteur):} elle capte ou détecte l'événement du champ
+de détection et le convertit des mesures physiques ou analogiques en données
+numériques. Il se compose du capteur lui-même et d'un ADC (convertisseurs
+analogique-numérique) qui permet les données à convertir.\par
+\textbf{ Unité de communication (unité d'émission et de réception):} Sa fonction est de
+transmettre et de recevoir des informations. Il est équipé d'une paire émetteur /
+récepteur pour communiquer au sein du réseau. Cependant, il existe d'autres
+possibilités de transmission (optique, infrarouge, etc.).\par
+ \textbf{Bloc d'alimentation}: il s'agit d'un composant essentiel de l'architecture du
+capteur, et c'est celui qui alimente toutes les autres unités. Il correspond souvent à
+une batterie ou une cellule qui alimente le capteur, et ses ressources limitées en font
+un problème propre à ce type de réseau car celui-ci est généralement déployé dans
+des zones inaccessibles.
+La dernière réalisation d'un bloc d'alimentation basé sur un panneau solaire tente de
+fournir une solution pour prolonger sa durée de vie [2].
+De plus, d'autres unités peuvent être équipées d'un capteur. Comme un système de
+positionnement global (GPS), une unité de navigation pour assurer le mouvement du
+capteur, ou une unité de capture spécifique telle qu'une caméra pour acquérir la
+vidéo.\par
+\subsection{Architecture Logicielle}
+La limitation de puissance du capteur nécessite l'utilisation de systèmes OS léger
+comme TinyOS ou Contiki, cependant, TinyOS est toujours le plus utilisé et le plus
+populaire dans l'arène RCSF. Il est gratuit et une grande communauté de
+scientifiques l'utilise dans des simulations pour développer et tester des algorithmes
+et des protocoles de réseau.\par
+\textbf{ Système d'exploitation TinyOS :}TinyOS est un système d'exploitation open source développé et maintenu par
+l'Université de Berkeley. Ce système d'exploitation est conçu pour les réseaux de
+capteurs sans fil car le capteur ne dispose pas de suffisamment de mémoire pour
+prendre en charge un système d'exploitation comme Linux ou Windows qui prend
+beaucoup de mémoire.
+TinyOS a été créé pour répondre aux caractéristiques et aux exigences des réseaux
+de capteurs, tels que [3]:
+-Réduction de la taille de la mémoire\par
+-Faible consommation d'énergie.\par
+- Opérations auxiliaires intenses et puissantes.\par
+- Il a été amélioré en termes de mémoire et d'utilisation d'énergie.\par
+TinyOS est un système d'exploitation basé sur
+Événement; Cela signifie qu'il devient actif lorsqu'un événement se produit pour
+mieux fournir les ressources énergétiques des capteurs.\par
+\textbf{ Système d'exploitation Contiki :}
+Contiki OS est un système d'exploitation développé par Dunkel et d'autres. Contiki
+OS, qui est basé sur le langage de programmation open-source C, a été développé
+pour les réseaux de capteurs sans fil légers, flexibles et de faible puissance.
+Les environnements WSN sont souvent limités en puissance, comme mentionné.
+C'est l'une des principales limites du RCSF. De même, les conceptions de nœuds
+petits et simples sont les autres limitations. Pour cette raison, RCSF est un must have
+Les fonctions matérielles et logicielles critiques pour gérer ces nœuds. Contiki OS
+est une solution pratique pour contrer les limitations susmentionnées grâce à sa
+flexibilité et à sa prise en charge des réseaux minces et de faible puissance.\par
+\section{ Réseau de capteur sans fil}
+\subsection{Définition}
+Le réseau de capteurs sans fil (RCSF), le Wireless sensor Network (WSN), se compose d'un
+grand nombre de nœuds de capteurs intelligents, «Smart sensor», numérotés de dizaines à
+plusieurs milliers d'éléments. Dans les sous-réseaux distribués pour collecter des
+informations du monde physique dans dont il est publié. Ensuite, les données collectées sont
+envoyées à une station de traitement de données appelée " Station de Base " (BS: Base
+Station).\par
+Ce transfert des données collectées peut être effectué, périodiquement ou sur une base
+événementielle, vers la station de base directement ou via un ou plusieurs nœuds privés
+fixes ou mobiles appelés «bassins».\par
+Dans ces réseaux, chaque nœud est capable de surveiller son environnement et de répondre
+si nécessaire en envoyant les informations collectées à un ou plusieurs points de collecte, et
+les données capturées sont acheminées via un routage multi-hop vers un nœud appelé "point
+de collecte" du nœud de bassin [4].\par
+\begin{center}
+    \includegraphics[width=8cm]{rs.png} \par
+    \caption{  \textbf{Figure 2.3 :} Exemple d’un réseau de capteur. } \par
+    \end{center}
+\subsection{Les composants de réseau de capteurs sans fil}
+Les réseaux de capteurs sans fil (WSN) sont composés de nœuds, qui sont des unités
+de capteurs sans fil, un routeur et une station de base.\par
+\textbf{ Nœuds de capteur :}Un capteur est un appareil qui détecte des informations et les transforme en mot.
+Le dispositif comprend un processeur, une mémoire, une batterie, un émetteur et un
+récepteur pour former un réseau ad hoc.\par
+ \textbf{Station de base :}
+Une station (composée d'un processeur, d'une carte radio, d'une antenne et d'une
+carte d'interface USB) connecte le réseau de capteurs à un autre réseau. ll est
+préprogrammé avec un logiciel de réseau basse consommation pour communiquer
+avec des nœuds de capteurs sans fil.\par
+ \textbf{Le routeur :}
+Un routeur est un appareil contrôlé par un microprocesseur connecté entre deux
+types de réseaux différents. Il transfère également des paquets de données entre les
+réseaux informatiques. Le routeur est utilisé pour se connecter à divers réseaux;
+Extrait la destination du colis et sélectionne la meilleure destination.
+Le routeur détermine la destination du paquet et les informations qu'il contient.
+En utilisant les informations de la table de routage, le paquet est acheminé vers le
+réseau suivant.\par 
+\subsection{Caractéristiques des réseaux de capteurs sans fil }
+Un réseau de capteurs sans fil présente de nombreuses caractéristiques importantes,
+notamment:\par
+\textbf{Durée de vie limitée :}
+ Les capteurs utilisent leurs énergies pour calculer et transmettre des données.
+Chaque nœud joue le rôle d'un émetteur et d'un routeur, de sorte qu'une coupure de
+courant dans le nœud de détection peut affecter des changements majeurs dans la
+topologie du réseau et nécessiter une réorganisation coûteuse de ce dernier [5].\par
+\textbf{Ressources limitées :}
+Le facteur de forme (très petit) limite la quantité de ressources qui peuvent être
+mises dans ces nœuds, donc la capacité de traitement et la mémoire sont très limitées.\par.
+\textbf{Bande passante limitée (supports de transmission) :}
+Pour la communication entre les nœuds, différents supports sans fil sont utilisés
+(radio, infrarouge, optique), en fonction de l'environnement dans lequel ils se
+trouvent et de la tâche qui leur est demandée, ils doivent donc être compatibles.
+Cependant, la majorité des capteurs communiquent via l'utilisation d'un circuit RF.
+En raison de la puissance limitée, les nœuds de capteurs ne sont pas capables de
+supporter des débits très élevés [5].\par
+\textbf{Évolutivité :}
+Le nombre de nœuds de capteurs dans le réseau de capteurs peut être de l'ordre de
+centaines ou de milliers (selon l'application) [5].
+\textbf{Structure dynamique :}
+La topologie des réseaux de capteurs change fréquemment et rapidement car les
+nœuds peuvent être déployés dans des environnements difficiles (par ex.
+Exemple Battlefield), ainsi qu'une défaillance très probable du nœud de capteur.
+Cependant, les nœuds de capteur et les points de terminaison (nœuds de destination)
+où les informations capturées sont envoyées peuvent être mobiles, de sorte que le
+transport de messages vers ou vers un nœud mobile est un autre défi. Par
+conséquent, la capture peut être à la fois statique et dynamique en fonction de
+l'application [5].\par
+\textbf{ Collecte de données :}
+Les techniques de collecte de données concernent le traitement des données par le
+réseau et la réduction du nombre de messages .
+Réduisant ainsi la consommation d'énergie. Dans les RCSF, les données produites
+par les nœuds de capteurs sont fortement corrélées, ce qui signifie qu'il existe une
+redondance dans les données. Les utilisateurs s'intéressent au phénomène .
+Capturés par les données générées par chaque nœud, ces réseaux offrent ainsi la
+possibilité d'agréger des données pour réduire la bande passante [5].\par
+ \textbf{Réseau autorégulé :}
+Il est pratiquement impossible de réaliser une configuration manuelle du réseau en
+raison du grand nombre de nœuds et de leurs déploiements dans
+Environnements hostiles. De plus, les nœuds peuvent quitter le réseau avec une
+panne (coupure de courant, panne physique, etc.), et d'autres peuvent les fusionner,
+il est donc nécessaire que le réseau s'organise de lui-même [5].\par
+\subsection{Application RCSF}
+Nous catégorisons les implémentations RCSF en quatre catégories: basées sur le
+temps (basées sur le temps), sur les événements (sur les événements), sur les
+requêtes (sur les requêtes) et hybrides [6].\par
+\textbf{ Applications temporelles :}
+Cette catégorie représente des applications où l'acquisition et la transmission des
+données capturées sont liées au temps, la quantité de données échangées dans le
+réseau dépend de la périodicité des mesures qui seront faites sur l'environnement
+local, par exemple dans les domaines: agricole, scientifique expériences, etc.\par
+\textbf{ Applications orientées événements :}
+Dans ce cas, les capteurs envoient leurs données uniquement dans le cas où un
+certain événement se produit. Exemple de surveillance des feux de forêt où le
+capteur envoie des alarmes à la station de base dès que la température dépasse un
+certain seuil.\par
+\textbf{Demandes adressées :}
+Dans ce cas, le capteur n'envoie les informations qu'après une demande explicite de
+la station de base. Cette catégorie d'applications est destinée aux applications
+conviviales. Ces derniers peuvent demander des informations à des zones
+spécifiques du réseau ou interroger des capteurs pour obtenir des métriques d'intérêt.
+Dans ce cas, la connaissance de la topologie du réseau et de l'emplacement des
+capteurs est requise.\par
+\textbf{ Applications hybrides :}
+Cette application est basée sur un mélange des types mentionnés précédemment. Par
+exemple, dans un réseau conçu pour suivre des objets, le réseau peut combiner un 
+réseau de surveillance (basé sur le temps) avec un réseau de collecte de données
+basé sur les événements. Par exemple, pendant des périodes prolongées d'inactivité
+du capteur et en l'absence d'objet, le réseau peut assurer une fonction de
+surveillance.
+
+\p\end{itemize}
+
+\section{Méthodes de recherche}
+\subsection{Routage}
+Le routage est une méthode d’acheminement des informations vers la bonne
+destination à travers un réseau de connexion donné, il consiste à assurer unestratégie
+qui garantit, n’importe quel moment, un établissement de routes correcteset efficaces
+entre n’importe Quelle paire de noeuds appartenant au réseau.
+Ce qui assure l’échange des messages d’une manière continue. Vu les limitations
+des réseaux ad hoc, la construction des routes doit être faite avec un minimum de
+contrôle et de consommation de bande passante. [7]\par
+\subsection{Routage hiérarchique }
+Les méthodes de routage hiérarchique ont des avantages spéciaux liés au ‘passage à
+l’échelle et à l’efficacité dans la communication. Par exemple, elles sont utilisées
+pour exécuter un routage avec économie d’énergie dans les RCSF.
+Dans une architecture hiérarchique, des noeuds à grande énergie peuvent être
+employés pour traiter et envoyer l’information, alors que des noeuds à énergie
+réduite peuvent assurer la capture à proximité de la cible. La création des clusters et
+l’assignation des tâches spéciales aux têtes de clusters peuvent considérablement
+renforcer le passage à l’échelle, l’augmentation de la durée de vie et l’efficacité
+énergétique du système global.\par
+Le routage hiérarchique est une manière efficace de réduire la consommation
+énergétique dans un cluster en exécutant l’agrégation et la fusion de données afin de
+diminuer le nombre de messages transmis à la station de base. [8]\par
+Les nœuds à faible énergie peuvent être employés pour exécuter la tâche de la
+capture à proximité de la cible .
+\par
+\subsection{ Caractéristique d'un protocole de routage hiérarchique }
+Un protocole de routage hiérarchique doit s’écrier plusieurs tâches mais tout d'abord
+quelques dé nations s’imposent.\par
+Le protocole de routage hiérarchique est associé à de nombreuses tâches, mais avant tout,
+certains défis émergent.\par
+\textbf{ Clustering:} Le Clustering est une technique permettant de diviser le réseau en groupes
+(clusters), sachant que pour chaque groupe un leader est affecté à chaque groupe (Cluster Head)
+pour communiquer avec les éléments de son groupe, le processus d'assemblage contribue
+grandement à économiser l'énergie , réduisant la complexité des protocoles de routage et la
+flexibilité du facteur de mesure En plus de la collecte de données, qui permet d'éliminer la
+redondance des données et d'envoyer uniquement les informations utiles\par
+\textbf{ Cluster:} un cluster est un groupe de nœuds qui forment l'unité organisationnelle du réseau
+de capteurs.\par
+\textbf{Cluster Head : }il représente le chef de groupe et a diverses tâches telles que l'organisation
+de la communication entre les groupes et au sein du groupe, la collecte des données, et il est élu
+par d'autres nœuds ou il peut être désigné à l'avance par le concepteur du réseau.
+\section{ TEEN (Threshold-sensitive Energy Efficient Sensor Network protocole)}
+Manjeshwar et Agrawal [9] ont proposé une technique de clustering appelée TEEN
+pour les applications critiques où le changement de certains paramètres peut être
+brusque. L’architecture du réseau est basée sur un groupement hiérarchique à
+plusieurs niveaux où les noeuds les plus proches forment des clusters.\par
+Puis ce processus de clustering passe au deuxième niveau jusqu’à ce que la station
+de base soit atteinte. Après la formation des clusters, chaque cluster head transmet à
+ses membres deux seuils : un seuil Hard HT (hard threshold), qui est la valeur seuil
+du paramètre contrôlé (surveillé) et un seuil Soft ST (soft threshold) représentant
+une petite variation de la valeur du paramètre contrôlé.\par
+L’occurrence de cette petite variation ST permet au noeud qui la détecte de la
+signaler à la station de base en transmettant un message d’alerte. Par conséquent, le
+seuil Soft réduira le nombre de transmissions puisqu’il ne permet pas la transmission
+s’il y a peu ou pas de variation de la valeur du paramètre contrôlé.\par
+Au début, les nœuds écoutent le médium continuellement et lorsque la valeur captée
+du paramètre contrôlé dépasse le seuil Hard, le noeud transmet l’information. La
+valeur captée est stockée dans une variable interne appelée SV.\par
+Puis, les noeuds ne transmettront des données que si la valeur courante du paramètre
+contrôlé est supérieure au seuil hard HT ou diffère du SV d’une quantité égale ou
+plus grande que la valeur du seuil Soft ST.\par
+Puisque la transmission d’un message consomme plus d’énergie que la détection des
+données, alors la consommation d’énergie dans TEEN est moins importante que
+dans les protocoles proactifs ou ceux qui transmettent des données périodiquement
+tels que LEACH.
+\end{itemize}
+
+\pagebreak
+\bibliographystyle{abnt-num}
+\bibliography{ref}
+[1] K. Beydoun.“ Conception d’un protocole de routage hiérarchique pour les
+réseaux de capteurs, " Thèse de Doctorat en informatique, Université de FrancheComté des sciences et techniques,2009.\\
+\bibliography{ref}
+[2] David Martins, ”Sécurité dans les réseaux de capteurs sans fil Sténographie et réseaux
+de confiance“, L'U.F.R. des Sciences et Techniques de l’université de Franche-Comté, 2010.\\  \bibliography{ref}
+[3] Bouzidi Zeyneb et Benameur Amina, ”Mise en place d’un réseau de capteurs sans fil
+pour l’irrigation intelligente“, Mémoire de Master, Université de Tlemcen, 2012.\\ \bibliography{ref}
+[4] K.B. Kredo, B.P. Mohapatra. "Medium access control in wireless sensor networks",
+Computer network 51(4), pp 961-994 , 2007.\\ \bibliography{ref}
+[5] MERRANI Nassima, KHIMOUM Nadia. ’ Simulation et évaluation de protocoles de
+gestion de clés dans les réseaux de capteurs’. Mémoire d’ingénieur d’état en informatique.
+Bejaia 2009.\\ \bibliography{ref}
+[6] M. Ilyas and I. Mahgoub. "Handbook of sensor networks Compact wireless and wired
+Sensing Systems", ISBN 08493196864. CRC PRESS LLS, USA, 2005.\\ \bibliography{ref}
+[7] Mr RAHMOUNE Amer, “Simulation d’un protocole de surveillance des interfaces d’un
+routeur“, mémoire présenté pour obtenir le titre d'ingénieur d'état, Université A/MIRA de
+Bejaïa, 2014/2015.\\ \bibliography{ref}
+[8] Meldjem Sara , “,Les réseaux de capteurs , mémoire présenté pour obtenir le Licence 3 :
+GTR, Université des sciences et de la Technologie Houari Boumediene,2013/2014.\\ \bibliography{ref}
+[9] D.P. Agrawal A. Manjeshwar. “TEEN : a routing protocol for enhanced efficiency in
+wireless sensor networks“. Proceedings 15th International Parallel and Distributed
+Processing Symposium, 2001.
+
+\end{document}
